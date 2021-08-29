@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+    <script src="firebase.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="banner">
+        <img src="./bg-desktop-dark.jpg">
+    </div>
+    <div class="container">
+        <div class="header">
+            <span class="title">TODO</span>
+            <img src="./icon-sun.svg">
+        </div>
+
+        <div class="new-todo">
+            <div class="btn-check">
+                <div class="check"><img src="./icon-check.svg"></div>
+            </div>
+            <div class="todo-input">
+                <form onsubmit="additem(event)">
+                    <input id="todo-input" type="text" placeholder="Create new todo...">
+                </form>
+            </div>
+        </div>
+        <div class="todo-item-wrapper">
+            <div class="todo-item">
+                
+            </div>
+            <div class="todo-items">
+                <div class="todo-info">
+                    <div class="item-left">
+                        5items
+                    </div>
+                    <div class="item-status">
+                        <span class="active">All</span>
+                        <span>Active</span>
+                        <span>Completed</span>
+                    </div>
+                    <div class="item-clear">
+                        <span>Clear Item</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
